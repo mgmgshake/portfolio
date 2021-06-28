@@ -39,6 +39,9 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   padding: 120px 10% 0;
   transition: all .5s;
+  @media screen and (min-width: 768px) {
+    width: 30%;
+  }
 }
 
 .nav__content__items {
@@ -48,7 +51,7 @@
 }
 
 .nav__content__item {
-  font-size:  1.5rem;
+  font-size:  1.5em;
   text-align: left;
   color: #333;
   margin-bottom: 20px;
@@ -61,6 +64,6 @@
     width: 100%;
   }
   @media screen and (min-width: 1025px) {
-    font-size: 2rem;
+    font-size: 3em;
   }
 }
