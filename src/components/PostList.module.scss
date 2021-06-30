@@ -13,7 +13,7 @@
 .blogList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 80%;
     margin: 0 auto;
     @media screen and (min-width: 600px) {
@@ -29,7 +29,20 @@
         }
         @media screen and (min-width: 1025px) {
             width: 32%;
+        } 
+    }
+    @media screen and (min-width: 600px) {
+        li:not(:nth-of-type(2n)) + li {
+            margin-left: 8%;
         }
-        
+    }
+    @media screen and (min-width: 1025px) {
+        li:not(:nth-of-type(2n)) + li {
+            margin-left: 0;
+        }
+        li:not(:nth-of-type(3n)) + li {
+            margin-left: 2%;
+        } 
+
     }
 }
