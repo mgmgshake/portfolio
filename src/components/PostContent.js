@@ -10,15 +10,15 @@ const PostCell = (props) => {
       <h2 className={styles.title}>Blog</h2>
       <article className={styles.article}>
         <div className={styles.article__content}>
-          <h3 className={styles.article__title}>{ title }</h3>
-          <div className={styles.article__flex}>
-            <p className={styles.article__category}>#{ category.name }</p>
-            <date className={styles.article__date}>{ publishedAt }</date>
+          <h3 className={styles.article__content__title}>{ title }</h3>
+          <div className={styles.article__content__flex}>
+            <p className={styles.article__content__category}>#{ category.name }</p>
+            <date className={styles.article__content__date}>{ publishedAt }</date>
           </div>
-          <p className={styles.article__thumbnail}>
+          <p className={styles.article__content__thumbnail}>
             <img src={thumbnail?.url} alt={title} />
           </p>
-          <div className={styles.article__text} dangerouslySetInnerHTML={{ __html: content }}></div>
+          <div className={styles.article__content__text} dangerouslySetInnerHTML={{ __html: content }}></div>
         </div>
       </article>
     </div>
