@@ -17,6 +17,9 @@ module.exports = {
           {
             endpoint: "category",
           },
+          {
+            endpoint: "works",
+          }
         ],
       },
     },
