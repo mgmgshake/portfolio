@@ -13,6 +13,7 @@ const Nav = ({openMenu, setOpenMenu}) => {
             <div className={styles.nav__content}>
                 <ul className={styles.nav__content__items}>
                     <li className={styles.nav__content__item}><Link to="/">TOP</Link></li>
+                    <li className={styles.nav__content__item}><Link to="/works">WORKS</Link></li>
                     <li className={styles.nav__content__item}><Link to="/blog">BLOG</Link></li>
                 </ul>
             </div>

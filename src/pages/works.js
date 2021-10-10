@@ -4,15 +4,14 @@ import { Helmet } from "react-helmet"
 import Layout from "../components/Layout"
 import "./common.scss"
 import PostList from "../components/works/PostList"
-import * as styles from "../components/PostList.module.scss"
 
 // markup
-const WorkPage = (props) => {
+const WorksPage = (props) => {
   const posts = props.data.allMicrocmsWorks.nodes
   return (
     <Layout>
       <Helmet>
-        <title>work | mmm's site</title>
+        <title>works | mmm's site</title>
         <meta
           name="description"
           content="shakexxmmmのポートフォリオです。"
@@ -40,4 +39,4 @@ export const query = graphql`
   }
 `
 
-export default WorkPage
+export default WorksPage
