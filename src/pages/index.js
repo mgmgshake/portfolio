@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 import Layout from "../components/Layout"
 import Profile from "../components/Profile"
 import About from "../components/top/About"
+import Works from "../components/top/Works"
 
 // markup
 const IndexPage = (props) => {
@@ -22,6 +23,7 @@ const IndexPage = (props) => {
       </Helmet>
       <Profile />
       <About />
+      <Works />
     </Layout>
   )
 }
