@@ -16,6 +16,9 @@ const IndexPage = (props) => {
           content="shakexxmmmのポートフォリオサイトです。"
         />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"></meta>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
       </Helmet>
       <Profile />
     </Layout>
