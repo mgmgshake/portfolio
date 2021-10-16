@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import Layout from "../components/Layout"
 import Profile from "../components/Profile"
-import "./common.scss"
+import About from "../components/top/About"
 
 // markup
 const IndexPage = (props) => {
@@ -21,6 +21,7 @@ const IndexPage = (props) => {
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
       </Helmet>
       <Profile />
+      <About />
     </Layout>
   )
 }
