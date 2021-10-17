@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply text-gray-800;
+}
+
+.ellipsis {
+    display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.cms-contents {
+    h2 {
+        @apply text-2xl leading-relaxed mb-3 border-l-8 border-yellow-400 pl-2;
+    }
+    p + h2 {
+        @apply mt-3;
+    }
+    h3 {
+        @apply text-xl leading-relaxed my-2 border-b-2 border-yellow-400;
+    }
+    a {
+        @apply text-blue-500;
+    }
+    ul {
+        @apply my-4;
+        padding-left: 1rem;
+        & > li {
+            list-style-type: disc;
+        }
+    }
+}
