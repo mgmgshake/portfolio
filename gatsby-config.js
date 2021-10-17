@@ -19,7 +19,10 @@ module.exports = {
           },
           {
             endpoint: "works",
-          }
+          },
+          {
+            endpoint: "diary",
+          },
         ],
       },
     },
