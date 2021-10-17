@@ -15,7 +15,7 @@ const DiaryPage = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"></meta>
       </Helmet>
       <main className="bg-yellow-300 py-20">
-        <h1 className="text-6xl mb-2 text-center font-title">DIARY</h1>
+        <h1 className="midashi mb-2">DIARY</h1>
         <p className="text-base mb-10 text-center">日々の感想など</p>
         <DiaryList />
       </main>

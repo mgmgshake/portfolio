@@ -6,7 +6,7 @@ import DiaryCard from "./DiaryCard";
 const About = () => {
     return (
         <section className="bg-yellow-300 py-40">
-            <h2 className="text-6xl mb-2 text-center font-title">ABOUT</h2>
+            <h2 className="midashi mb-2">ABOUT</h2>
             <p className="text-base mb-10 text-center">私について</p>
             <div className="container max-w-5xl mx-auto flex justify-between">
                 <div className="w-card-1/2 flex flex-col justify-between">
