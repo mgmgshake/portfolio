@@ -19,8 +19,7 @@ const Works = () => {
                 }
             }  
         `
-    ) 
-    console.log(data)
+    )
     return (
         <section className="bg-yellow-300 py-40">
             <h2 className="text-6xl mb-2 text-center font-title">WORKS</h2>
