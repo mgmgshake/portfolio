@@ -9,6 +9,9 @@ module.exports = {
       minHeight: {
         'text': 'calc(1rem * 1.625 *  5)',
       },
+      maxHeight: {
+        'diary': 'calc(1rem * 1.625 * 5)',
+      },
       fontFamily: {
         'body': ['Inconsolata', 'monospace'],
         'title': ['Montserrat', 'sans-serif'],
