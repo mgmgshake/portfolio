@@ -3,7 +3,7 @@ module.exports = {
     title: "shake portfolio",
   },
   plugins: [
-    "gatsby-plugin-sass",
+    `gatsby-plugin-postcss`,
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-microcms",
@@ -19,7 +19,10 @@ module.exports = {
           },
           {
             endpoint: "works",
-          }
+          },
+          {
+            endpoint: "diary",
+          },
         ],
       },
     },

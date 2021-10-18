@@ -1,17 +1,14 @@
 import * as React from "react"
-import Header from "./Header"
-import * as styles from "./Layout.module.scss"
+import Footer from "./Footer"
+import '../css/index.css'
 
 const Layout = ({children}) => {
     return (
         <>
-            <Header></Header>
-            <div className={styles.content}>
+            <div className="font-body">
                 <main>{ children }</main>
             </div>
-            <footer className={styles.footer}>
-                &copy; 2021 shakexxmmm
-            </footer>
+            <Footer />
         </>
     )
 }

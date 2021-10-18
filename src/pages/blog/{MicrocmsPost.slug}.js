@@ -1,9 +1,8 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
-import PostContent from "../../components/PostContent"
+// import PostContent from "../../components/PostContent"
 import Layout from "../../components/Layout"
-import "../common.scss"
 
 // markup
 const PostPage = (props) => {
@@ -11,10 +10,10 @@ const PostPage = (props) => {
   return (
     <Layout>
       <Helmet>
-        <title>{ post.title }</title>
+        <title>{ post.title } | Maki Goto</title>
         <meta name="description" content={`${post.title}`} />
       </Helmet>
-      <PostContent post={post} />
+      {/* <PostContent post={post} /> */}
     </Layout>
   )
 }
