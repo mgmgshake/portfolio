@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 const MainVisual = () => {
     return (
         <div className="bg-gray-800 py-10">
-            <div className="container max-w-5xl flex justify-between items-center mx-auto my-3">
+            <div className="container max-w-5xl flex justify-between items-center mx-auto my-3 mb-4">
                 <h2 className="text-6xl text-white font-title">Hello!<br />I'm Maki Goto.</h2>
                 <p className="w-80">
                     <img width={152} height={152} src="/profile.png" alt="profile" className="w-full y-auto"/>

@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const WorkContent = (props) => {
   const { title, description, detail, slug, thumbnail } = props.post;
   return (
-      <article className="container bg-white p-16 rounded-2xl shadow-card mx-auto">
+      <article className="container bg-white p-8 md:p-16 rounded-2xl shadow-card mx-auto">
         <div>
           <p className="w-full mb-14">
             <img src={thumbnail?.url} alt={title} className="w-full h-auto" />

@@ -16,9 +16,9 @@ const DiaryCard = () => {
     )
     return (
         <Link to='/diary'>
-            <div className="p-10 rounded-2xl bg-white relative shadow-card">
+            <div className="card relative">
                 <div class="text-base leading-relaxed min-h-text max-h-diary ellipsis" dangerouslySetInnerHTML={{ __html: data.allMicrocmsDiary.nodes[0].content }}></div>
-                <div className="absolute -right-5 -bottom-12">
+                <div className="myIllust absolute right-0 -bottom-6 md:-right-5 md:-bottom-12">
                     <img src="/profile.png" alt="profile" width="100" height="100" />
                 </div>
             </div>

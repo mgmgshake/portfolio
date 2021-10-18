@@ -3,6 +3,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      container: {
+        center: true,
+        width: {
+          default: '90%',
+        }
+      },
       width: {
         'card-1/2': 'calc(50% - 20px)',
       },
@@ -21,7 +27,11 @@ module.exports = {
       }
     },
   },
+  corePlugins: {
+    container: false,
+  },
   variants: {
+    container: [],
     extend: {},
   },
   plugins: [],

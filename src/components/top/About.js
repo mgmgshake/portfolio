@@ -8,10 +8,10 @@ const About = () => {
         <section className="bg-yellow-300 py-40">
             <h2 className="midashi mb-2">ABOUT</h2>
             <p className="text-base mb-10 text-center">私について</p>
-            <div className="container max-w-5xl mx-auto flex justify-between">
-                <div className="w-card-1/2 flex flex-col justify-between">
+            <div className="container max-w-5xl mx-auto md:flex md:justify-between">
+                <div className="md:w-card-1/2 md:flex flex-col justify-between mb-8 md:mb-0">
                     <DiaryCard />
-                    <div className="p-10 rounded-2xl bg-white shadow-card">
+                    <div className="card mt-8 md:mt-0">
                         <dl>
                             <dt>
                                 <h3 className="text-2xl">😍</h3>
@@ -32,7 +32,7 @@ const About = () => {
                         </dl>
                     </div>
                 </div>
-                <div className="w-card-1/2 p-10 rounded-2xl bg-white shadow-card">
+                <div className="md:w-card-1/2 card">
                     <h3 className="text-3xl mb-5">Career</h3>
                     <dl>
                         <dt className="text-2xl mb-4">1996</dt>
