@@ -10,7 +10,7 @@ const PostPage = (props) => {
   return (
     <Layout>
       <Helmet>
-        <title>{ post.title }</title>
+        <title>{ post.title } | Maki Goto</title>
         <meta name="description" content={`${post.title}`} />
       </Helmet>
       {/* <PostContent post={post} /> */}

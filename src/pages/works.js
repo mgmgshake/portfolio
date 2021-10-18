@@ -9,10 +9,10 @@ const WorksPage = (props) => {
   return (
     <Layout>
       <Helmet>
-        <title>works | mmm's site</title>
+        <title>works | Maki Goto</title>
         <meta
           name="description"
-          content="shakexxmmmのポートフォリオです。"
+          content="Maki Gotoのポートフォリオです。"
         />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"></meta>
       </Helmet>
