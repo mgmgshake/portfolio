@@ -39,13 +39,16 @@ body {
 
 .cms-contents {
     h2 {
-        @apply text-2xl leading-relaxed mb-3 border-l-8 border-yellow-400 pl-2;
+        @apply text-3xl leading-snug mb-3 border-b-2 border-yellow-400;
     }
     p + h2 {
-        @apply mt-3;
+        @apply mt-8;
     }
     h3 {
-        @apply text-xl leading-relaxed my-2 border-b-2 border-yellow-400;
+        @apply text-xl font-bold leading-relaxed my-2;
+    }
+    p + h3 {
+        @apply mt-6;
     }
     a {
         @apply text-blue-500;
