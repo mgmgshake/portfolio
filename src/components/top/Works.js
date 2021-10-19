@@ -21,7 +21,7 @@ const Works = () => {
         `
     )
     return (
-        <section className="bg-yellow-300 py-40">
+        <section className="bg-yellow-300 py-20 md:py-40">
             <h2 className="midashi mb-2">WORKS</h2>
             <p className="text-base mb-10 text-center">制作物</p>
             <ul>
