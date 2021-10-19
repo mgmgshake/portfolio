@@ -6,7 +6,7 @@ const DiaryList = (props) => {
     <div>
       <div className="container card p-8 md:p-16 relative">
           <h2 className="text-3xl font-bold mb-5">{title}</h2>
-          <div class="text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: content }}></div>
+          <div className="text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
     </div>
   )

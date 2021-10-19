@@ -17,7 +17,7 @@ const DiaryList = () => {
     `
   )
   return (
-    <div class="container mx-auto">
+    <div className="container mx-auto">
       <ul>
         {data.allMicrocmsDiary.nodes.map(diary => {
           return <li className="mb-20"><DiaryCard diary={diary} /></li>

@@ -9,7 +9,7 @@ const WorksCard = (props) => {
             <div className="hidden lg:block rounded-2xl bg-white md:w-9/12">
                 <img className="w-full h-auto" src={thumbnail?.url} alt={title} />
             </div>
-            <div class="card md:w-6/12 lg:w-4/12 relative lg:absolute lg:right-0 lg:-bottom-10">
+            <div className="card md:w-6/12 lg:w-4/12 relative lg:absolute lg:right-0 lg:-bottom-10">
                 <div className="block lg:hidden rounded-2xl bg-white mb-3">
                     <img className="w-full h-auto" src={thumbnail?.url} alt={title} />
                 </div>
