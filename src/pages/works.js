@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import { Helmet } from "react-helmet"
+import Head from "../components/Head"
 import Layout from "../components/Layout"
 
 // markup
@@ -8,14 +8,7 @@ const WorksPage = (props) => {
   const posts = props.data.allMicrocmsWorks.nodes
   return (
     <Layout>
-      <Helmet>
-        <title>works | Maki Goto</title>
-        <meta
-          name="description"
-          content="Maki Gotoのポートフォリオです。"
-        />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"></meta>
-      </Helmet>
+      <Head title="WORKS" />
       <div className="bg-yellow-300 h-screen">
         <p>準備中です！</p>
       </div>
