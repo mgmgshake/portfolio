@@ -1,17 +1,14 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import { Helmet } from "react-helmet"
+import Head from "../../components/Head"
 import WorkContent from "../../components/works/WorkContent"
 import Layout from "../../components/Layout"
 
 const PostPage = (props) => {
   const post = props.data.microcmsWorks
   return (
-    <Layout>
-      <Helmet>
-        <title>{ post.title } | Maki Goto</title>
-        <meta name="description" content={`${post.title}`} />
-      </Helmet>
+      <Layout>
+    <Head title={post.title} />
       <section className="bg-yellow-300 py-20">
         <h1 className="midashi mb-2">WORKS</h1>
         <p className="text-base mb-10 text-center">制作物</p>
