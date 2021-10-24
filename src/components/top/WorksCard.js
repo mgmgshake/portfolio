@@ -20,7 +20,7 @@ const WorksCard = (props) => {
                     <li className="text-xs px-3 py-2 text-white bg-blue-500 rounded-2xl mx-1 mb-1">コーディング</li>
                 </ul>
                 <p className="text-gray-700 leading-relax mb-4">{description}</p>
-                <Link to={`/works/${slug}`} className="text-blue-500 float-right">view more</Link>
+                <Link to={`/works/${slug}`} className="block bg-yellow-500 text-white rounded-xl text-center p-2">view more</Link>
             </div>
         </div>
     )
