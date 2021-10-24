@@ -7,8 +7,8 @@ import Layout from "../../components/Layout"
 const PostPage = (props) => {
   const post = props.data.microcmsWorks
   return (
-      <Layout>
-    <Head title={post.title} />
+    <Layout>
+      <Head title={post.title} />
       <section className="bg-yellow-300 py-20">
         <h1 className="midashi mb-2">WORKS</h1>
         <p className="text-base mb-10 text-center">制作物</p>
