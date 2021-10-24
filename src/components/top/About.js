@@ -11,7 +11,7 @@ const About = () => {
             <div className="container max-w-5xl mx-auto md:flex md:justify-between">
                 <div className="md:w-card-1/2 md:flex flex-col justify-between mb-8 md:mb-0">
                     <DiaryCard />
-                    <div className="card mt-8 md:mt-0">
+                    <div className="card">
                         <dl>
                             <dt>
                                 <h3 className="text-2xl">😍</h3>
