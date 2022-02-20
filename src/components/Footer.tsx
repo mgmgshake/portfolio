@@ -2,8 +2,10 @@ import * as React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white text-center py-2">
-      &copy; 2021 Maki Goto
+    <footer className="ly_footer bl_footer">
+      <div className="ly_footer_inner">
+        <p className="bl_footer_txt">©2022 Maki Goto. All Rights Reserved.</p>
+      </div>
     </footer>
   );
 };
