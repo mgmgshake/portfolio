@@ -1,0 +1,15 @@
+@use "./../base/index" as base;
+
+.ly_footer {
+    padding: 16px;
+    margin-top: auto;
+}
+
+.ly_footer_inner {
+    width: base.$sp_width;
+    margin: 0 auto;
+    text-align: center;
+    @include base.mq(xl) {
+        width: base.$pc_width;
+    }
+}
