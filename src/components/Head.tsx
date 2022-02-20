@@ -60,11 +60,11 @@ const Head: React.FC<Props> = (props) => {
         <meta name="theme-color" content="#ffffff"></meta>
         {/* favicon ここまで */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> */}
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Montserrat:wght@700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500&display=swap"
           rel="stylesheet"
-        />
+        ></link>
       </Helmet>
     </HelmetProvider>
   );
