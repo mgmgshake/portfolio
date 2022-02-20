@@ -1,0 +1,11 @@
+@use "./../base/index" as base;
+
+.bl_footer {
+    background-color: base.$purple;
+}
+
+.bl_footer_txt {
+    font-family: 'Montserrat', sans-serif;
+    color: base.$gray;
+    font-size: 1rem;
+}

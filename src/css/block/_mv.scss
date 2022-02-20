@@ -1,0 +1,26 @@
+@use "./../base/index" as base;
+
+.bl_mv {
+    text-align: center;
+}
+
+.bl_mv_icon {
+    width: 120px;
+    margin: 0 auto 32px;
+}
+
+.bl_mv_ttl {
+    margin-bottom: 24px;
+    span {
+        color: base.$white;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+}
+
+.bl_mv_txt {
+    font-family: 'Montserrat', sans-serif;
+    color: base.$purple;
+    font-size: 2rem;
+    font-weight: 500;
+}
