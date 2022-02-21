@@ -10,11 +10,18 @@
     img:first-child {
         width: 60px;
         height: 60px;
-        margin-right: 8px;
     }
     img:nth-child(2) {
-        width: 116px;
-        height: auto;
+        display: none;
+    }
+    @include base.mq(xl) {
+        img:first-child {
+            margin-right: 8px;
+        }
+        img:nth-child(2) {
+            width: 116px;
+            height: auto;
+        }
     }
 }
 

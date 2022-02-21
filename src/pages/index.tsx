@@ -23,7 +23,7 @@ const IndexPage: React.FC = () => {
             </p>
             <h1 className="bl_mv_ttl">
               <span>Hello, I'm</span>
-              <img src="/mv/moji.svg" alt="Maki" />
+              <img src="/mv/moji.svg" alt="Maki" width="504" height="162" />
             </h1>
             <p className="bl_mv_txt">I'm a front-end developer.</p>
           </div>
