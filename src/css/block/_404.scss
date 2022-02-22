@@ -1,0 +1,22 @@
+@use "./../base/index" as base;
+
+.bl_404 {
+    text-align: center;
+    > h1 {
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 1.0;
+        color: base.$pink;
+        margin: 2rem auto 1rem;
+    }
+    > p {
+        font-size: 1rem;
+        color: base.$purple;
+        text-align: center;
+    }
+    &_image {
+        img {
+            margin: 0 auto;
+        }
+    }
+}

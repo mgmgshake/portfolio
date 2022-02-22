@@ -1,0 +1,43 @@
+@use "./../base/index" as base;
+
+.ly_chronology {
+    width: base.$sp_width;
+    margin: 0 auto;
+    @include base.mq(xl) {
+        width: 600px;
+        li + li {
+            margin-top: 40px;
+        }
+    }
+}
+
+.ly_skill {
+    width: base.$sp_width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li + li {
+        margin-top: 2rem;
+    }
+    @include base.mq(md) {
+        width: 800px;
+        li + li {
+            margin-top: 0;
+        }
+        li:nth-child(n + 3) {
+            margin-top: 3rem;
+        }
+    }
+}
+
+.ly_moreInfo {
+    width: base.$sp_width;
+    margin: 0 auto;
+    @include base.mq(md) {
+        width: 600px;
+    }
+    & > li + li {
+        margin-top: 3rem;
+    }
+}

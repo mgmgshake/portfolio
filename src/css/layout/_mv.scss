@@ -1,0 +1,11 @@
+@use "./../base/index" as base;
+
+.ly_mvCont {
+    width: base.$sp_width;
+    margin: 0 auto;
+    padding: 4rem 0;
+    @include base.mq(xl) {
+        padding: 128px 0;
+        width: 504px;
+    }
+}

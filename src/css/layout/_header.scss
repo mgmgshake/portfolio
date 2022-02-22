@@ -1,0 +1,17 @@
+@use "./../base/index" as base;
+
+.ly_header {
+    padding: 16px 0;
+}
+
+.ly_header_inner {
+    width: base.$sp_width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 16px;
+    @include base.mq(xl) {
+        width: base.$pc_width;
+    }
+}

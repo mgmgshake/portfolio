@@ -3,6 +3,9 @@ module.exports = {
     title: "shake portfolio",
   },
   plugins: [
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-typegen`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-postcss`,
     "gatsby-plugin-react-helmet",
     {

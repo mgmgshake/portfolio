@@ -1,0 +1,19 @@
+@use "./../base/index" as base;
+
+.ly_cont {
+    padding: 96px 0 160px;
+    > *:nth-child(2) {
+        margin-top: 96px;
+    }
+}
+
+.ly_cont_inner {
+    > section:nth-child(n + 2) {
+        margin-top: 96px;
+    }
+    section {
+        h2 + * {
+            margin-top: 64px;
+        }
+    }
+}

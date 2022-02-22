@@ -1,0 +1,42 @@
+@use "./../base/index" as base;
+
+.bl_header {
+    background-color: base.$gray;
+}
+
+.bl_logo {
+    display: flex;
+    justify-content: flex-start;
+    img:first-child {
+        width: 60px;
+        height: 60px;
+    }
+    img:nth-child(2) {
+        display: none;
+    }
+    @include base.mq(xl) {
+        img:first-child {
+            margin-right: 8px;
+        }
+        img:nth-child(2) {
+            width: 116px;
+            height: auto;
+        }
+    }
+}
+
+.bl_nav {
+    > ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+    > ul > li {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: base.$white;
+        font-size: 1.5rem;
+        & + li {
+            margin-left: 32px;
+        }
+    }
+}
