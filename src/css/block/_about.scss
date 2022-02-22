@@ -202,6 +202,7 @@
             justify-content: flex-start;
         }
         & > li {
+            @include base.ff(ja);
             font-size: 1rem;
             line-height: 1.0;
             padding: 0.5rem 1rem;
