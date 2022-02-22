@@ -12,10 +12,7 @@ const Header: React.FC = () => {
         <nav className="bl_nav">
           <ul>
             <li>
-              <Link to="">ABOUT</Link>
-            </li>
-            <li>
-              <Link to="">WORKS</Link>
+              <Link to="/about">ABOUT</Link>
             </li>
           </ul>
         </nav>
