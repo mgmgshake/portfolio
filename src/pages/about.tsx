@@ -196,7 +196,12 @@ const AboutPage: React.FC = () => {
                 <li className="bl_info">
                   <div className="bl_info_left">
                     <p>
-                      <img src="/icon/icon_smile.svg" alt="" />
+                      <img
+                        src="/icon/icon_smile.svg"
+                        alt="好きなもの"
+                        width="80"
+                        height="81"
+                      />
                     </p>
                     <h3>好きなもの</h3>
                   </div>
@@ -213,7 +218,12 @@ const AboutPage: React.FC = () => {
                 <li className="bl_info">
                   <div className="bl_info_left">
                     <p>
-                      <img src="/icon/icon_sad.svg" alt="" />
+                      <img
+                        src="/icon/icon_sad.svg"
+                        alt="苦手なもの"
+                        width="80"
+                        height="81"
+                      />
                     </p>
                     <h3>苦手なもの</h3>
                   </div>
@@ -226,7 +236,12 @@ const AboutPage: React.FC = () => {
                 <li className="bl_info">
                   <div className="bl_info_left">
                     <p>
-                      <img src="/icon/icon_niyari.svg" alt="" />
+                      <img
+                        src="/icon/icon_niyari.svg"
+                        alt="趣向"
+                        width="80"
+                        height="81"
+                      />
                     </p>
                     <h3>趣向</h3>
                   </div>
@@ -241,7 +256,12 @@ const AboutPage: React.FC = () => {
                 <li className="bl_info">
                   <div className="bl_info_left">
                     <p>
-                      <img src="/icon/icon_normal.svg" alt="" />
+                      <img
+                        src="/icon/icon_normal.svg"
+                        alt="近状"
+                        width="80"
+                        height="81"
+                      />
                     </p>
                     <h3>近状</h3>
                   </div>
