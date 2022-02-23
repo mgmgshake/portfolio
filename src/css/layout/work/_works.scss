@@ -1,0 +1,23 @@
+@use "./../../base/index" as base;
+
+.ly_works {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    > li + li {
+        margin-top: 3rem;
+    }
+    @include base.mq(md) {
+        flex-direction: row;
+        justify-content: space-between;
+        > li + li {
+            margin-top: 0;
+        }
+        > li:nth-child(n+3) {
+            margin-top: 3rem;
+        }
+    }
+}

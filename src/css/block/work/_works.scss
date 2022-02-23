@@ -1,0 +1,33 @@
+@use "./../../base/index" as base;
+
+.bl_work {
+    width: 100%;
+    > a {
+        width: 100%;
+        > p {
+            width: 100%;
+            border-radius: 1rem;
+            background-color: base.$purple;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        > h2 {
+            @include base.ff(ja);
+            font-size: 1.5rem;
+            line-height: 1.4;
+            color: base.$white;
+            text-align: center;
+        }
+        &:hover > p > img {
+            transform: scale(1.2);
+            transition-duration: 0.5s;
+        }
+    }
+    @include base.mq(md) {
+        width: calc(50% - 1.5rem);
+    }
+}
