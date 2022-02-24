@@ -293,8 +293,19 @@ type SitePage = Node & {
   readonly children: ReadonlyArray<Node>;
   readonly internal: Internal;
   readonly isCreatedByStatefulCreatePages: Maybe<Scalars['Boolean']>;
+  readonly context: Maybe<SitePageContext>;
   readonly pluginCreator: Maybe<SitePlugin>;
   readonly pluginCreatorId: Maybe<Scalars['String']>;
+};
+
+type SitePageContext = {
+  readonly id: Maybe<Scalars['String']>;
+  readonly slug: Maybe<Scalars['String']>;
+  readonly _xparams: Maybe<SitePageContext_xparams>;
+};
+
+type SitePageContext_xparams = {
+  readonly slug: Maybe<Scalars['String']>;
 };
 
 type SitePlugin = Node & {
@@ -385,8 +396,13 @@ type MicrocmsWorks = Node & {
   readonly detail: Maybe<Scalars['String']>;
   readonly description: Maybe<Scalars['String']>;
   readonly slug: Maybe<Scalars['String']>;
+  readonly url: Maybe<Scalars['String']>;
+  readonly role: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
+  readonly tools: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
+  readonly period: Maybe<Scalars['String']>;
   readonly sortIndex: Maybe<Scalars['Int']>;
   readonly worksId: Maybe<Scalars['String']>;
+  readonly gatsbyPath: Maybe<Scalars['String']>;
 };
 
 
@@ -419,6 +435,11 @@ type MicrocmsWorks_revisedAtArgs = {
   fromNow: Maybe<Scalars['Boolean']>;
   difference: Maybe<Scalars['String']>;
   locale: Maybe<Scalars['String']>;
+};
+
+
+type MicrocmsWorks_gatsbyPathArgs = {
+  filePath: Maybe<Scalars['String']>;
 };
 
 type MicrocmsWorksThumbnail = {
@@ -806,6 +827,7 @@ type Query_sitePageArgs = {
   children: Maybe<NodeFilterListInput>;
   internal: Maybe<InternalFilterInput>;
   isCreatedByStatefulCreatePages: Maybe<BooleanQueryOperatorInput>;
+  context: Maybe<SitePageContextFilterInput>;
   pluginCreator: Maybe<SitePluginFilterInput>;
   pluginCreatorId: Maybe<StringQueryOperatorInput>;
 };
@@ -875,8 +897,13 @@ type Query_microcmsWorksArgs = {
   detail: Maybe<StringQueryOperatorInput>;
   description: Maybe<StringQueryOperatorInput>;
   slug: Maybe<StringQueryOperatorInput>;
+  url: Maybe<StringQueryOperatorInput>;
+  role: Maybe<StringQueryOperatorInput>;
+  tools: Maybe<StringQueryOperatorInput>;
+  period: Maybe<StringQueryOperatorInput>;
   sortIndex: Maybe<IntQueryOperatorInput>;
   worksId: Maybe<StringQueryOperatorInput>;
+  gatsbyPath: Maybe<StringQueryOperatorInput>;
 };
 
 
@@ -1949,6 +1976,16 @@ type SiteFunctionSortInput = {
   readonly order: Maybe<ReadonlyArray<Maybe<SortOrderEnum>>>;
 };
 
+type SitePageContextFilterInput = {
+  readonly id: Maybe<StringQueryOperatorInput>;
+  readonly slug: Maybe<StringQueryOperatorInput>;
+  readonly _xparams: Maybe<SitePageContext_xparamsFilterInput>;
+};
+
+type SitePageContext_xparamsFilterInput = {
+  readonly slug: Maybe<StringQueryOperatorInput>;
+};
+
 type SitePluginFilterInput = {
   readonly resolve: Maybe<StringQueryOperatorInput>;
   readonly name: Maybe<StringQueryOperatorInput>;
@@ -2161,6 +2198,9 @@ type SitePageFieldsEnum =
   | 'internal.owner'
   | 'internal.type'
   | 'isCreatedByStatefulCreatePages'
+  | 'context.id'
+  | 'context.slug'
+  | 'context._xparams.slug'
   | 'pluginCreator.resolve'
   | 'pluginCreator.name'
   | 'pluginCreator.version'
@@ -2284,6 +2324,7 @@ type SitePageFilterInput = {
   readonly children: Maybe<NodeFilterListInput>;
   readonly internal: Maybe<InternalFilterInput>;
   readonly isCreatedByStatefulCreatePages: Maybe<BooleanQueryOperatorInput>;
+  readonly context: Maybe<SitePageContextFilterInput>;
   readonly pluginCreator: Maybe<SitePluginFilterInput>;
   readonly pluginCreatorId: Maybe<StringQueryOperatorInput>;
 };
@@ -2840,8 +2881,13 @@ type MicrocmsWorksFieldsEnum =
   | 'detail'
   | 'description'
   | 'slug'
+  | 'url'
+  | 'role'
+  | 'tools'
+  | 'period'
   | 'sortIndex'
-  | 'worksId';
+  | 'worksId'
+  | 'gatsbyPath';
 
 type MicrocmsWorksGroupConnection = {
   readonly totalCount: Scalars['Int'];
@@ -2898,8 +2944,13 @@ type MicrocmsWorksFilterInput = {
   readonly detail: Maybe<StringQueryOperatorInput>;
   readonly description: Maybe<StringQueryOperatorInput>;
   readonly slug: Maybe<StringQueryOperatorInput>;
+  readonly url: Maybe<StringQueryOperatorInput>;
+  readonly role: Maybe<StringQueryOperatorInput>;
+  readonly tools: Maybe<StringQueryOperatorInput>;
+  readonly period: Maybe<StringQueryOperatorInput>;
   readonly sortIndex: Maybe<IntQueryOperatorInput>;
   readonly worksId: Maybe<StringQueryOperatorInput>;
+  readonly gatsbyPath: Maybe<StringQueryOperatorInput>;
 };
 
 type MicrocmsWorksSortInput = {
@@ -3561,5 +3612,15 @@ type WorksIndexQuery = { readonly allMicrocmsWorks: { readonly nodes: ReadonlyAr
       Pick<MicrocmsWorks, 'title' | 'slug'>
       & { readonly thumbnail: Maybe<Pick<MicrocmsWorksThumbnail, 'url'>> }
     )> } };
+
+type WorkDetailPageQueryVariables = Exact<{
+  id: Scalars['String'];
+}>;
+
+
+type WorkDetailPageQuery = { readonly microcmsWorks: Maybe<(
+    Pick<MicrocmsWorks, 'title' | 'url' | 'slug' | 'detail' | 'role' | 'tools' | 'period'>
+    & { readonly thumbnail: Maybe<Pick<MicrocmsWorksThumbnail, 'url'>> }
+  )> };
 
 }
