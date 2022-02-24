@@ -1,0 +1,14 @@
+@use "./../base/index" as base;
+
+.el_label {
+    @include base.ff(ja);
+    display: block;
+    width: fit-content;
+    font-size: 1rem;
+    line-height: 1.0;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    color: base.$gray;
+    background-color: base.$pink;
+    margin: 0.5rem 0.25rem;
+}
