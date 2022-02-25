@@ -22,10 +22,10 @@ const WorkDetailPage: React.FC<PageProps<GatsbyTypes.WorkDetailPageQuery>> = (
               <p className="bl_workImage">
                 <img src={post.thumbnail?.url} alt={post.title} />
               </p>
-              <div
+              <section
                 className="bl_workDetail_txt"
                 dangerouslySetInnerHTML={{ __html: post.detail as string }}
-              ></div>
+              ></section>
               <dl className="bl_workDetailInfo">
                 {post.role && (
                   <>
