@@ -73,8 +73,14 @@
         }
     }
     img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
+        & + img {
+            margin-top: 0.5rem;
+            @include base.mq(md) {
+                margin-top: 0;
+            }
+        }
     }
 }
 
