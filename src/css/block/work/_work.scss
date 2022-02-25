@@ -72,6 +72,10 @@
             list-style-type: disc;
         }
     }
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .bl_workDetailInfo {
@@ -86,6 +90,7 @@
         color: base.$pink;
     }
     dd {
+        @include base.ff(ja);
         font-size: 1rem;
         line-height: 1.4;
         color: base.$white;
