@@ -1,0 +1,114 @@
+@use "./../../base/index" as base;
+
+.bl_workTtl {
+    a {
+        @include base.ff(en);
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.0;
+        color: base.$gray;
+        padding: 0.75rem;
+        background-color: base.$pink;
+        border-radius: 2rem;
+        margin: 0.5rem auto 0;
+        display: block;
+        width: fit-content;
+        max-width: base.$sp_width;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.bl_workImage {
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.bl_workDetail_txt {
+    @include base.ff(ja);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: base.$white;
+    > h2 + * {
+        margin-top: 0 !important;
+    }
+    p + h2 {
+        margin: 3rem 0 1rem;
+    }
+    p + h3 {
+        margin: 2rem 0 1rem;
+    }
+    > h2 {
+        display: block;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 700;
+        color: base.$pink;
+    }
+    > h3 {
+        display: block;
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: base.$purple;
+    }
+    p {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    a {
+        color: base.$pink;
+        text-decoration: underline;
+    }
+    ul {
+        margin: 1rem 0;
+        padding-left: 2rem;
+        li {
+            list-style-type: disc;
+        }
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        & + img {
+            margin-top: 0.5rem;
+            @include base.mq(md) {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.bl_workDetailInfo {
+    padding: 2rem;
+    background-color: base.$black;
+    border-radius: 1rem;
+    dt {
+        @include base.ff(en);
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.4;
+        color: base.$pink;
+    }
+    dd {
+        @include base.ff(ja);
+        font-size: 1rem;
+        line-height: 1.4;
+        color: base.$white;
+        margin-top: 0.5rem;
+    }
+    dd + dt {
+        margin-top: 2rem;
+    }
+    &_labels {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: -0.5rem -0.25rem;
+    }
+}
