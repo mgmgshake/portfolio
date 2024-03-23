@@ -68,7 +68,7 @@ const AboutPage: React.FC = () => {
                   <span className="bl_chronology_dot"></span>
                   <div className="bl_chronology_detail">
                     <h3>卒業 名古屋大学 情報文化学部社会システム情報学科</h3>
-                    <h3>入社 モバイルサービス事業会社</h3>
+                    <h3>入社 株式会社セレス</h3>
                     <p>
                       デザイナーとして、バナー制作/サイトコーディングなどを担当しました。
                     </p>
@@ -78,7 +78,9 @@ const AboutPage: React.FC = () => {
                   <p className="bl_chronology_year">2022</p>
                   <span className="bl_chronology_dot"></span>
                   <div className="bl_chronology_detail">
-                    <h3>退社 モバイルサービス事業会社</h3>
+                    <h3>退社 株式会社セレス</h3>
+                    <h3>入社 株式会社hokan</h3>
+                    <p>エンジニアとして、CRMシステムの開発に携わっています。</p>
                   </div>
                 </li>
               </ul>
